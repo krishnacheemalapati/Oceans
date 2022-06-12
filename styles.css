@@ -1,0 +1,257 @@
+@font-face {
+    font-family: font;
+    src: url(./assets/Quantico-Regular.ttf);
+}
+
+* {
+    font-family: font;
+    margin: 0px;
+    transition: opacity 2s ease-in-out;
+   -moz-transition: opacity 2s ease-in-out;
+   -webkit-transition: opacity 2s ease-in-out;
+}
+
+#wash {
+    transition: all 5s ease-in-out;
+   -moz-transition: all 5s ease-in-out;
+   -webkit-transition: all 5s ease-in-out;
+    position: absolute;
+    width:100vw;
+    height:200vh;
+    margin-top: -100vh;
+    z-index: 99;
+}
+
+#wash.in {
+    transition: all 5s ease-in-out;
+   -moz-transition: all 5s ease-in-out;
+   -webkit-transition: all 5s ease-in-out;
+    position: absolute;
+    width:100vw;
+    height:200vh;
+    margin-top: 100vh;
+    z-index: 99;
+}
+
+#invis {
+    opacity: 0;
+}
+
+html {
+    background: url(./assets/beach.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#plane {
+    height: 15vh;
+}
+
+.ocean-top-elements {
+    padding-top: 5vh;
+    margin-left: 10vw;
+    display: flex;
+}
+
+.diver-boat {
+    width: 10vw;
+    height: auto;
+    z-index: -1;
+}
+
+.diver {
+    position: absolute;
+    transform: rotate(270deg);
+    height: 3vh;
+    margin-left: 7vw;
+    margin-top: 3vh;
+}
+
+.oily {
+    transition: all 2s ease-in-out !important;
+    -moz-transition: all 2s ease-in-out !important;
+    -webkit-transition: all 2s ease-in-out !important;
+    position: absolute;
+    margin-left: 50vw;
+    width: 10vw;
+    height: auto;
+    opacity: 0.6;
+    margin-top: 5vh;
+}
+
+.oily.clicked{
+    position: absolute;
+    margin-left: 40vw;
+    width: 20vw;
+    margin-top: 2vh;
+    height: auto;
+    opacity: 0.6;
+}
+
+.oil-spill-text1{
+    opacity: 0;
+    position: absolute;
+    margin-left: 46vw;
+    width: 10vw;
+    margin-top: 7.6vh;
+    overflow-wrap: break-word;
+    font-size: 1.85vh;
+    color: whitesmoke;
+}
+
+.oil-spill-text2{
+    opacity: 0;
+    position: absolute;
+    margin-left: 46vw;
+    width: 10vw;
+    margin-top: 7.6vh;
+    overflow-wrap: break-word;
+    font-size: 1.85vh;
+    color: whitesmoke;
+}
+
+.cleaning-boat{
+    transition: all 2s ease-in-out !important;
+    -moz-transition: all 2s ease-in-out !important;
+    -webkit-transition: all 2s ease-in-out !important;
+    position: absolute;
+    margin-left: 100vw;
+    width: 8vw;
+    height: auto;
+}
+
+.cleaning-boat.cleaning{
+    transition: all 2s ease-in-out !important;
+    -moz-transition: all 2s ease-in-out !important;
+    -webkit-transition: all 2s ease-in-out !important;
+    position: absolute;
+    margin-left: 70vw;
+    width: 8vw;
+    height: auto;
+}
+
+.rising-tides{
+    position: absolute;
+    margin-top: -5vh;
+    margin-left: 30vw;
+}
+
+.buoy{
+    margin-left: 10vw;
+    height: 10vh;
+    opacity: 1;
+}
+
+.text {
+    width: 20vw;
+    margin-left: 2vw;
+    text-align: center;
+    opacity: 0;
+}
+
+.construction-sign {
+    margin-top: 20vh;
+    z-index: 3;
+}
+
+.construction-text {
+    position: absolute;
+    width: 13vw;
+    margin-left: 1vw;
+    margin-top: -32vh;
+    text-align: center;
+}
+
+.construction-text1 {
+    opacity: 0;
+    position: absolute;
+    width: 13vw;
+    margin-left: 1vw;
+    margin-top: -32vh;
+    text-align: center;
+}
+
+.building.clicked{
+    transition: height 2s ease-in-out;
+    -moz-transition: height 2s ease-in-out;
+    -webkit-transition: height 2s ease-in-out;
+    position: absolute;
+    margin-top: -115vh;
+    margin-left: -5vw;
+    z-index: -1;
+    height: 150vh;
+    width: 20vw;
+}
+
+.building {
+    transition: height 2s ease-in-out;
+    -moz-transition: height 2s ease-in-out;
+    -webkit-transition: height 2s ease-in-out;
+    position: absolute;
+    margin-top: -115vh;
+    margin-left: -5vw;
+    z-index: -1;
+    height: 0vh;
+    width: 20vw;
+}
+
+.bottle-img {
+    position: absolute;
+    margin-left: 25vw;
+    height: 5vh;
+}
+
+.sand-text{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    width: 30vw;
+    margin-left: 30vw;
+    margin-top: -7vh;
+}
+
+.speech {
+    position: absolute;
+    margin-left: 65vw;
+    margin-top: -40vh;
+}
+
+.human-img {
+    position: absolute;
+    height: 30vh;
+    margin-left: 82vw;
+    margin-top: -30vh;
+}
+
+.person-text {
+    position: absolute;
+    margin-left: 67vw;
+    margin-top: -36.5vh;
+    width: 20vw;
+}
+
+#speech-bubble{
+    opacity: 0;
+}
+
+.byebye {
+    opacity: 0 !important;
+}
+
+.hihi {
+    opacity: 1 !important ;
+}
+
+#under-the-sea {
+    display: none;
+}
